@@ -3,16 +3,53 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>frontify</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontify.css">
 </head>
 <body>
+    <div class="header">
+        <div class="col-md-7 col-md-offset-1 logo">
+            <img src="http://frontify.com/assets/img/logo.svg" alt="Frontify Logo">
+        </div>
+        <div class="col-md-4">
+            <!-- href触发模态弹出窗元素 -->
+            <a class="btn btn-signup btn-orange"  href="javascript:;"  >SIGN UP</a>
+            <a class="btn btn-login" href="https://app.frontify.com/auth/?referer=%2F"> LOGIN</a>
+            <a class="btn-menu">
+                <span class="color-blue">MENU</span>
+                <img  class="icon-collapse" src="https://app.frontify.com/upload/screens/16651/5395e077823ebc303a069cecb73b0c9c-1432196040.png">
+            </a>
+        </div>
+    </div>
+    <!-- 模态弹出窗内容 -->
+    <div class="modal mod-signup" id="mymodal">
+        <div class="overlay"></div>
+        <div class="signup-form">
+            <div class="head">
+                <h3>Sign Up</h3>
+                <p>for a free Frontify account</p>
+                <img src="https://app.frontify.com/upload/screens/16651/6a834198e952dfa3fccb085209d45456-1431338148.png">
+            </div>
+            <div class="form">
+                <input placeholder="Full Name">
+                <input placeholder="E-Mail Address">
+                <input placeholder="PassWord">
+            </div>
+            <div class="footer">
+                <button type="button" class="btn btn-submit"></button>
+                <p>
+                    <a>Terms of Service</a>
+                    <a>Cancel</a>
+                </p>
+            </div>
+        </div>
 
-
-
+    </div>
 
 
 
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="frontify.js" type="text/javascript" ></script>
 </body>
 </html>
