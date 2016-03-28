@@ -53,5 +53,52 @@ $(function()
     $(".key-next").click(moveRight);
     $(".key-prev").click(moveLeft);
 
+    /*用户评论自动循环更替*/
+    var index = 0;/*不能放在函数里面*/
+    function novation() {
+        if (index > 2) {
+            index = 0;
+        }
+        switch (index) {
+            case 0 :
+            {
+                /*$(select).fadeout(speed,callback);以参数形式添加callback函数~保证在动画100%完成
+                * 时再执行callback函数~避免产生错误或页面冲突*/
+                $(".tweet3").fadeOut(500,function(){
+                    $(".tweet1").fadeIn(500);
+                });
+                break;
+            }
+            case 1 :
+            {
+                $(".tweet1").fadeOut(500,function(){
+                    $(".tweet2").fadeIn(500);
+                });
+
+                break;
+            }
+            case 2 :
+            {
+                $(".tweet2").fadeOut(500,function(){
+                    $(".tweet3").fadeIn(500);
+                });
+                break;
+            }
+        }
+
+
+        index++;
+
+
+    }
+
+    /**在JS中无论是setTimeout还是setInterval，在使用函数名作为调用句柄时都不能带参数
+     **，而在许多场合必须要带参数，这就需要想方法解决。已下这种叫做匿名函数包装法*/
+    setInterval(function(){
+        novation(index);
+    }, 6000);
+
+
+
 }
 );
