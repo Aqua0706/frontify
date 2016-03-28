@@ -1,75 +1,82 @@
-html{
-    color:#000;
+html {
+    color: #000;
     background: #FFF;
-    font-family: 'Whitney SSm A','Whitney SSm B';
+    font-family: 'Whitney SSm A', 'Whitney SSm B';
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 @font-face {
-    font-family: 'frontify-web-icons';
-    src: url('../assets/font/frontify-web-icons.woff') format('woff') ;/* Modern Browsers */
+    font-family: 'Whitney SSm A';
+    src: url("assets/font/montserrat-bold-webfont%20.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'frontify web icons';
+    src: url("assets/font/frontify-web-icons.woff") format('woff') ;/* Modern Browsers */
 
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
     height: 146px;
-    background-image: -webkit-linear-gradient(top,rgba(255,255,255,.8),rgba(255,255,255,0));
-    margin : 0;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
+    margin: 0;
     padding: 0;
     vertical-align: middle;
 }
 
-.tip{
-   margin: 50px 50px 50px 12px;
+.tip {
+    margin: 50px 50px 50px 12px;
 }
 
 .logo {
 
     letter-spacing: .5px;
-    white-space: nowrap;/*强制不换行*/
+    white-space: nowrap; /*强制不换行*/
     text-decoration: none;
     cursor: pointer;
 }
 
-
-.btn{
+.btn {
     display: inline-block;
-    border: 1px solid rgba(0,0,0,.3);
-    font-weight:700;
+    border: 1px solid rgba(0, 0, 0, .3);
+    font-weight: 700;
     font-size: 12px;
     text-align: center;
     letter-spacing: .5px;
-    -webkit-border-radius:40px;
-    -moz-border-radius:40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
     border-radius: 40px;;
-    white-space: nowrap;/*强制不换行*/
+    white-space: nowrap; /*强制不换行*/
     text-decoration: none;
     cursor: pointer;
 }
 
-
-
-.btn-signup{
-    padding:13px 25px ;
+.btn-signup {
+    padding: 13px 25px;
     vertical-align: middle;
     position: relative;
     margin-right: 20px;
 }
+
 .btn-signup:before {
     content: '';
     position: absolute;
     border: white solid 3px;
     border-radius: 40px;
     top: 1px;
-    left:1px;
+    left: 1px;
     right: 1px;
     bottom: 1px;
     opacity: 0;
@@ -78,31 +85,33 @@ html{
     -webkit-transition-property: opacity;
     transition-property: opacity;
 }
+
 .btn-signup:hover:before, .btn-signup:focus:before, .btn-signup:active:before {
-    opacity: 0.4;/*不透明级别*/
+    opacity: 0.4; /*不透明级别*/
 }
 
-.btn-signup:hover,.btn-signup:focus,.btn-signup:active{
-    color:white;
+.btn-signup:hover, .btn-signup:focus, .btn-signup:active {
+    color: white;
 }
 
-.btn-orange{
+.btn-orange {
     background: #FAB117;
-    color:white;
+    color: white;
     border-style: none;
 }
 
-.btn-red{
+.btn-red {
     background: #EF6756;
-    color:white;
+    color: white;
     border-style: none;
 }
-.btn-login{
-    margin-right:30px;
+
+.btn-login {
+    margin-right: 30px;
     vertical-align: middle;
     position: relative;
-    color:black;
-    padding:12px 26px ;
+    color: black;
+    padding: 12px 26px;
 }
 
 .btn-login:before {
@@ -111,7 +120,7 @@ html{
     border: gray solid 3px;
     border-radius: 40px;
     top: 0;
-    left:0;
+    left: 0;
     right: 0;
     bottom: 0;
     opacity: 0;
@@ -120,127 +129,130 @@ html{
     -webkit-transition-property: opacity;
     transition-property: opacity;
 }
+
 .btn-login:hover:before, .btn-login:focus:before, .btn-login:active:before {
-    opacity: 0.2;/*不透明级别*/
+    opacity: 0.2; /*不透明级别*/
 }
 
-
-.btn-menu{
+.btn-menu {
     cursor: pointer;
     font-weight: 700;
     font-size: 12px;
     text-align: center;
     letter-spacing: .5px;
 }
-.btn-menu:hover,.btn-menu:focus,.btn-menu:active,.btn-menu:link{
+
+.btn-menu:hover, .btn-menu:focus, .btn-menu:active, .btn-menu:link {
     text-decoration: none;
 }
 
-.color-blue{
-    color:#02546E;
+.color-blue {
+    color: #02546E;
 
 }
 
-.icon-collapse{
-    width:29px;
-    height:25px;
+.icon-collapse {
+    width: 29px;
+    height: 25px;
     margin-left: 5px;
 }
 
-.icon-collapse-close{
+.icon-collapse-close {
     display: none;
 }
 
-.icon-close{
+.icon-close {
     display: none;
 }
 
-.icon-close-toggle{
-    display:block;
+.icon-close-toggle {
+    display: block;
     position: absolute;
-    top:10px;
-    right:110px;
+    top: 10px;
+    right: 110px;
     width: 23px;
     height: 23px;;
 }
 
-.mod-signup{
-    display:none;
+.mod-signup {
+    display: none;
     position: fixed;
-    top:0;
-    left:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
     right: 0;
     z-index: 100;
 }
 
-.show{
+.show {
     display: block;
 }
-.overlay{
+
+.overlay {
     position: fixed;
-    top:0;
-    left:0;
-    bottom:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
     right: 0;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     z-index: 10;
 }
 
-.signup-form{
+.signup-form {
     z-index: 11;
     max-width: 458px;
     max-height: 480px;
-    padding:40px 55px;
+    padding: 40px 55px;
     border-radius: 4px;
-    box-sizing: border-box;/*css3属性，另浏览器呈现出带有指定高度和宽度的框，并把边框和内边距放入框中*/
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin: auto;/*重要*/
+    box-sizing: border-box; /*css3属性，另浏览器呈现出带有指定高度和宽度的框，并把边框和内边距放入框中*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; /*重要*/
     background: white;
     letter-spacing: .6px;
 }
 
-div,p{
-    margin:0;
-    padding:0;
+div, p {
+    margin: 0;
+    padding: 0;
 }
-.head{
+
+.head {
     margin-bottom: 10px;
 }
 
-.head>h3{
+.head > h3 {
     font-weight: 800;
     font-size: 30px;
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
 
-.head>p{
+.head > p {
     font-size: 13px;
     line-height: 1.6;
     padding-bottom: 15px;
-    color:#a2a2a2;
+    color: #a2a2a2;
 }
 
-
-.head>img{
-    width:60px;
-    height:60px;
+.head > img {
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top:43px;
-    right:60px;
+    top: 43px;
+    right: 60px;
 }
-.form>input{
-    border:2px solid #DDD;
+
+.form > input {
+    border: 2px solid #DDD;
     padding: 10px;
     margin-bottom: 15px;
     width: 100%;
     border-radius: 4px;
-    color:#08546d;
+    color: #08546d;
     font-weight: 700;
     font-size: 16px;
     box-sizing: border-box;
@@ -256,24 +268,24 @@ textarea::-webkit-input-placeholder {
     color: lightgrey;
 }
 
-.footer{
+.footer {
     padding-top: 20px;
     text-align: center;
 }
 
-.btn-blue{
-    color:white;
+.btn-blue {
+    color: white;
     background-color: #02546E;
-    border: transparent;/*同border-style=none；*/
+    border: transparent; /*同border-style=none；*/
 }
 
-.btn-submit{
-    padding:13px 25px;
+.btn-submit {
+    padding: 13px 25px;
     font-size: 18px;
     width: 100%;
     max-width: 250px;
     height: 58px;
-    position: relative;/* 绝对定位的父元素也要定位，不然就会去找最近的已经定位了盒子去定位（like：body）*/
+    position: relative; /* 绝对定位的父元素也要定位，不然就会去找最近的已经定位了盒子去定位（like：body）*/
 }
 
 .btn-submit::before {
@@ -282,7 +294,7 @@ textarea::-webkit-input-placeholder {
     border: white solid 3px;
     border-radius: 40px;
     top: 1px;
-    left:1px;
+    left: 1px;
     right: 1px;
     bottom: 1px;
     opacity: 0;
@@ -291,15 +303,16 @@ textarea::-webkit-input-placeholder {
     -webkit-transition-property: opacity;
     transition-property: opacity;
 }
+
 .btn-submit:hover:before, .btn-submit:focus:before, .btn-submit:active:before {
-    opacity: 0.5;/*不透明级别*/
-}
-.btn-submit:hover,.btn-submit:focus,.btn-submit:active{
-    color:white;
+    opacity: 0.5; /*不透明级别*/
 }
 
+.btn-submit:hover, .btn-submit:focus, .btn-submit:active {
+    color: white;
+}
 
-.mod-signup .footer a:first-child {/*伪类*/
+.mod-signup .footer a:first-child { /*伪类*/
     margin-right: 15px;
 }
 
@@ -310,81 +323,82 @@ textarea::-webkit-input-placeholder {
     line-height: 1.6;
 }
 
-.open{
+.open {
     position: fixed;
-    top:146px;
-    left:0;
-    right:0;
+    top: 146px;
+    left: 0;
+    right: 0;
     bottom: 0;
     display: none;
 }
 
-ul,ol{
+ul, ol {
     list-style: none;
 }
 
-.open .container{
+.open .container {
     position: absolute;
-    top:0;
-    width:100%;
+    top: 0;
+    width: 100%;
     height: 125px;
     background: #02546E;
     z-index: 10;
 }
 
-.item-list{
-    margin:0px 110px;
+.item-list {
+    margin: 0px 110px;
     max-width: 1180px;
 }
 
-.item{
+.item {
     color: #FFFFFF;
-    width:220px;
-    height:125px;
+    width: 220px;
+    height: 125px;
     float: left;
     font-size: 12px;
     font-weight: 700;
     text-align: center;
     letter-spacing: .5px;
-    position: relative;/*方便子元素定位找到最近的以定位的包含块*/
+    position: relative; /*方便子元素定位找到最近的以定位的包含块*/
 }
 
-.item>div{
+.item > div {
     position: absolute;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
     min-height: 125px;
-    padding-top:80px;
+    padding-top: 80px;
 }
 
-.item>div>a{
+.item > div > a {
     color: #ffffff;
     text-decoration: none;
 }
-.open .overlay{
+
+.open .overlay {
     position: absolute;
-    top:0;
-    width:100%;
-    background: rgba(0,0,0,.8);
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
     z-index: 2;
 
 }
 
-.bg-blue{
+.bg-blue {
     background-color: #02546E;
 }
 
-.bg-orange{
+.bg-orange {
     background-color: #F9B031;
 }
 
-.bg-red{
-   background-color: #EF6756;
+.bg-red {
+    background-color: #EF6756;
 }
 
-.bg-lightblue{
+.bg-lightblue {
     background-color: #65C7D6;
 }
 
@@ -392,29 +406,30 @@ ul,ol{
     transition: padding-top .4s ease, height .4s ease;
     overflow: visible;
 }
-.sub-item{
-    display:none;
+
+.sub-item {
+    display: none;
     padding-top: 15px;
 }
 
-.expandable:hover .sub-item{
+.expandable:hover .sub-item {
     display: block;
 }
 
-.expandable:hover{
+.expandable:hover {
     /*height: auto;*/
     padding-top: 50px;
     padding-bottom: 10px;
-    transition: padding-top .4s ease,height .4s ease;
+    transition: padding-top .4s ease, height .4s ease;
     border-radius: 0 0 4px 4px;
 
 }
 
-.container .item a{
+.container .item a {
     text-decoration: none;
     color: white;
-    padding:8px;
-    display:block;
+    padding: 8px;
+    display: block;
 }
 
 .container .sub-item .btn {
@@ -426,43 +441,44 @@ ul,ol{
     display: inline-block;
     background-color: transparent;
 }
+
 .container .sub-item .btn:hover {
     outline: 0;
-    box-shadow: inset 0 0 0 3px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, .1);
 }
 
-.header-spacer{
+.header-spacer {
     display: block;
     height: 146px;
 }
 
 /*hero 中央字幕*/
-.page-hero{
+.page-hero {
     text-align: center;
-    padding:80px 0px;
+    padding: 80px 0px;
     letter-spacing: .5px
 }
 
-.color-orange{
+.color-orange {
     color: #FAB117;;
 }
 
-.color-red{
+.color-red {
     color: #f26651;
 }
 
-.color-lightblue{
-    color:#5FC8D7;
+.color-lightblue {
+    color: #5FC8D7;
 }
 
-.page-hero h1{
+.page-hero h1 {
     font-size: 60px;
     font-weight: 700;
-    line-height: 1.1;/*行间距，应用到一个块级元素时，它定义了该元素中基线之间的距离*/
+    line-height: 1.1; /*行间距，应用到一个块级元素时，它定义了该元素中基线之间的距离*/
     margin-bottom: 20px;
 }
 
-.page-hero p{
+.page-hero p {
     color: #9B9B9B;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -470,11 +486,11 @@ ul,ol{
 }
 
 /*case 案例*/
-.page-case{
+.page-case {
     position: relative;
     height: 80px;
     background-color: #f7f7f7;
-    width: 1423px;/*我电脑屏幕的宽度*/
+    width: 1423px; /*我电脑屏幕的宽度*/
     margin: 0px auto;
 }
 
@@ -485,129 +501,130 @@ ul,ol{
     transition: 0.25s;
     height: 80px;
 }
-.case-item{
-    position: relative;/*相对定位设定right，left使元素相对与其正常位置进行偏移*/
-    right:0;
+
+.case-item {
+    position: relative; /*相对定位设定right，left使元素相对与其正常位置进行偏移*/
+    right: 0;
 }
-.case-item img{
-    height:80px;
-    width:150px;
-    display:block;
+
+.case-item img {
+    height: 80px;
+    width: 150px;
+    display: block;
     margin: 0;
     padding: 0;
     opacity: .5;
-    float:left;
+    float: left;
 }
 
-.case-item img:hover{
-    opacity:1;
+.case-item img:hover {
+    opacity: 1;
 }
 
-.case-control{
+.case-control {
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 5;
-    pointer-events: none;/*使用pointer-events来阻止元素成为鼠标事件目标----设置或检索在何时成为属性事件的target*/
+    pointer-events: none; /*使用pointer-events来阻止元素成为鼠标事件目标----设置或检索在何时成为属性事件的target*/
 
 }
 
-.key-next,.key-prev{
+.key-next, .key-prev {
     font-size: 30px;
-    line-height: 80px;/*一分为二分别加在文本的顶部和底部*/
+    line-height: 80px; /*一分为二分别加在文本的顶部和底部*/
     /*vertical-align: middle;*/
     cursor: pointer;
     color: #999;
     width: 50px;
-    background-image: -webkit-linear-gradient(left,rgba(247,247,247,1),rgba(247,247,247,0));
+    background-image: -webkit-linear-gradient(left, rgba(247, 247, 247, 1), rgba(247, 247, 247, 0));
 
 }
 
-.key-prev{
+.key-prev {
     float: left;
     padding-left: 8px;
-    pointer-events: auto;/*与pointer-events属性未指定时的表现效果相同*/
+    pointer-events: auto; /*与pointer-events属性未指定时的表现效果相同*/
 }
 
-
-.key-next{
+.key-next {
     float: right;
     text-align: right;
     pointer-events: auto;
 }
 
-.page-teaser{
+.page-teaser {
     max-width: 100%;
-    padding: 0;/*这两句话等同设置width=1423px，适应多种屏幕*/
-    height:619px;
+    padding: 0; /*这两句话等同设置width=1423px，适应多种屏幕*/
+    height: 619px;
 }
 
-.product-styleguide{
+.product-styleguide {
     padding-top: 40px;
-    background: #fcb100 url(https://app.frontify.com/upload/screens/16651/45e52ee333a4fcba3b65dc068d1891cc.svg)
-                no-repeat center 170px ;/*no-repeat 不会重复平铺，css3可同时设置多个背景图片~*/
+    background: #fcb100 url(https://app.frontify.com/upload/screens/16651/45e52ee333a4fcba3b65dc068d1891cc.svg) no-repeat center 170px; /*no-repeat 不会重复平铺，css3可同时设置多个背景图片~*/
     background-size: 70% auto;
     text-align: center;
 }
 
-.product-workspace{
+.product-workspace {
     padding-top: 40px;
-    background: #f26651 url(https://app.frontify.com/upload/screens/16651/c563330ab891e04c0f1379bcb7f63994-1429624890.svg)
-                no-repeat center 170px;/*no-repeat 不会重复平铺，css3可同时设置多个背景图片~*/
-    background-size: 70% auto;/*百分比是根据内容标签元素大小，来缩放图片的尺寸大小*/
+    background: #f26651 url(https://app.frontify.com/upload/screens/16651/c563330ab891e04c0f1379bcb7f63994-1429624890.svg) no-repeat center 170px; /*no-repeat 不会重复平铺，css3可同时设置多个背景图片~*/
+    background-size: 70% auto; /*百分比是根据内容标签元素大小，来缩放图片的尺寸大小*/
     text-align: center;
 }
+
 .page-teaser h2 {
     color: #FFF;
     font-size: 40px;
-    font-weight:400;
+    font-weight: 400;
     margin-bottom: 8px;
     letter-spacing: 1.5px;
 }
 
-
 .page-teaser p {
     font-size: 18px;
     line-height: 1.4;
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
     margin-bottom: 350px;
 }
-.btn-bar{
-    margin: 0 -15px;/*不脱离文档流不使用float的话，负margin元素是不会破坏页面的文档流。
-                        所以如果你使用负margin上移一个元素，所有跟随的元素都会被上移。
-                        上和左一样，下和右设置负margin，这个元素不会动，后面的元素移动并会被此元素覆盖*/
-    background: rgba(255,255,255,.5);
-    padding: 30px;/*撑开容器*/
+
+.btn-bar {
+    margin: 0 -15px;
+    /*不脱离文档流不使用float的话，负margin元素是不会破坏页面的文档流。
+                            所以如果你使用负margin上移一个元素，所有跟随的元素都会被上移。
+                            上和左一样，下和右设置负margin，这个元素不会动，后面的元素移动并会被此元素覆盖*/
+    background: rgba(255, 255, 255, .5);
+    padding: 30px; /*撑开容器*/
     cursor: pointer;
     /*text-align:center 所以所包含的button居中显示*/
 }
 
-.btn-large{
+.btn-large {
     padding: 22px 45px;
     letter-spacing: 1px;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.page-company-feature{
+.page-company-feature {
     max-width: 100%;
-    margin:0;
+    margin: 0;
     padding: 0;
-    height:586px;
-    background: url(https://app.frontify.com/upload/screens/16651/9e344220b44b96ce3a9174e7267823d5-1431333200.jpg) ;
+    height: 586px;
+    background: url(https://app.frontify.com/upload/screens/16651/9e344220b44b96ce3a9174e7267823d5-1431333200.jpg);
     background-size: cover;
 }
 
-.coating{
-    background-color: rgba(96,199,215,.8);
+.coating {
+    background-color: rgba(96, 199, 215, .8);
     padding: 43px 0 80px;
-    margin:0;
+    margin: 0;
     color: #fff;
     letter-spacing: 1px;
 }
 
-.coating h2{
+.coating h2 {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -616,7 +633,7 @@ ul,ol{
 
 }
 
-.coating p{
+.coating p {
     font-size: 20px;
     line-height: 1.7;
     margin-bottom: 100px;
@@ -625,75 +642,178 @@ ul,ol{
 
 }
 
-.btn-company-feature{
-    padding-left:130px;
+.btn-company-feature {
+    padding-left: 130px;
 }
 
-.page-testimonial,.page-team{
+.page-testimonial, .page-team {
     margin: 0;
     padding: 70px 0 50px 0;
 }
 
-.page-testimonial h2,.page-team h2{
-    margin:0 0 40px 0;
+.page-testimonial h2, .page-team h2 {
+    margin: 0 0 40px 0;
     text-align: center;
     font-size: 40px;
     font-weight: 800;
     line-height: 1.4;
 }
 
-.line{
+.line {
     max-width: 1180px;
-    margin: 0 auto;/*居中*/
+    margin: 0 auto; /*居中*/
     font-size: 16px;
     letter-spacing: .3px;
     font-weight: 500;
 
 }
-div.line{
+
+div.line {
     height: 150px;
 }
-.line a{
+
+.line a {
     text-decoration: underline;
 }
 
-.line .tweet1{
+.line .tweet1 {
     display: none;
 }
 
-.line .tweet2{
+.line .tweet2 {
     display: none;
 }
 
-.line .tweet3{
-    display:none;
+.line .tweet3 {
+    display: none;
 }
 
-.page-team img{
+.page-team img {
     width: 147px;
     margin-bottom: 35px;
 }
-.page-team h3{
+
+.page-team h3 {
     font-size: 22px;
     font-weight: 700;
     line-height: 1.4;
     margin-bottom: 5px;
 }
-.page-team .person-role{
+
+.page-team .person-role {
     font-size: 16px;
     color: #5FC8D7;
     margin-bottom: 16px;
     line-height: 1.6;
 }
-.page-team p{
+
+.page-team p {
     font-size: 15px;
     color: #9B9B9B;
     line-height: 1.54;
     padding-right: 20px;
 }
 
+.line a.icon-twitter {
+    font-family: "frontify web icons";
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    font-size: 42px;
+    text-decoration: none;
+}
+
+.page-team li:nth-child(1) a{
+    top:20px;
+}
+
+.page-team li:nth-child(2) a{
+    top:40px;
+    transform: rotate(21deg);
+}
+
+.page-team li:nth-child(3) a{
+    top:30px;
+    transform: rotate(6deg);
+}
+
+.page-team li:nth-child(4) a{
+    top:50px;
+    transform: rotate(27deg);
+}
 
 
+/*一个元素包含浮动元素的时候，它可能会出现高度折叠，即元素的上下底边重合，和高度为0效果一样，（第一个ul）*/
+
+/**:after为元素里面用到了content属性，这样这条样式的意思是在ul元素后面生成指定的内容，这里生成的内容是一个空字符串，
+***因为只是让它来消除ul标签的高度折叠，并不让它显示出来。还有，这条样式里有display属性，要将他设置成block，这样clear
+***属性才会起作用，因为清除操作只作用于块级元素，它的原理是为要执行清除操作的元素添加上边距，以此让元素降到浮动元素的下面
+***，而操作行内元素的上边距不起作用。*/
+.page-team ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ul + ul.line{
+    margin-top: 50px;
+}
+
+.page-footer {
+    background: #02546e;
+    overflow: hidden;
+    position: relative;
+    padding: 50px 0;
+    color: #FFFFFF;
+}
+.page-footer h3{
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+a.nav-sub{
+    color: rgba(255,255,255,.7);
+    text-decoration: none;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 15px;
+}
+a.nav-sub:hover{
+    text-decoration:underline;
+}
+.page-footer .line .col-md-3 ul{
+    padding:0;
+    margin:0;
+
+}
+
+.page-footer nav>ul:before,.page-footer nav>ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.line.meta img{
+    position: absolute;
+    left:0;
+    bottom:0;
+    max-width: 600px;
+}
+
+.line.meta p{
+    padding-top:90px;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.line.meta p:nth-child(2){
+    padding-top:7px;
+    color: rgba(255,255,255,.7);
+}
 
 
 
